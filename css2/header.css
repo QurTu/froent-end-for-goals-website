@@ -1,4 +1,7 @@
 body {
+     background-color: #fbf2ea !important;
+}
+header {
      background-image: url(../images2/backgound.jpg);
      background-repeat: no-repeat;
      background-attachment: fixed;
@@ -12,7 +15,7 @@ body {
 }
 
 .accinfo {
-     background-color: #70b5f3;
+     background-color: #f4ba44;
      display: flex;
      justify-content:flex-end;
      padding-right: 100px;
@@ -22,8 +25,6 @@ body {
           padding: 10px 30px;
           font-size: 20px;
      }
-
-
 header {
     
      width: 100%;
@@ -33,7 +34,6 @@ header {
      .header-logo > img {
           width: 100%;
      }
-
      @media (max-width: 800px) {
           .accinfo {
                padding: 0px 20px;
