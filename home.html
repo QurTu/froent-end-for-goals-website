@@ -75,7 +75,7 @@
           <div class="day">
               <div class="tableflex">
                 <h2>TODAY</h2> 
-                <button type="button" class="btn btn-success">Take Reward</button>
+                <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#rewardmodal">Take Reward</button>
               </div> 
                       <!--  DESTOP TASKS TABLE-->
                 <table   class="table desktop ">
@@ -331,6 +331,27 @@
 
             
         </div>
+        <!-- take reward-->
+<div class="modal fade" id="rewardmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class=" modal-header  ">
+        <h5 class=" text-center" id="exampleModalLongTitle">Take reward</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        select from list
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Create New Reward</button>
+        <button type="button" class="btn btn-primary">Take Reward</button>
+      </div>
+    </div>
+  </div>
+</div>
                 <!--    content  SECTION  END-->
     <!--     Footer   -->
     <footer> d </footer>
