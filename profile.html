@@ -70,6 +70,69 @@
       
   
                 <!--    content  SECTION -->
+                <div  style="background-color: white;" class="container collar"> 
+                    <div class="profile">
+                        <div class="profile-info">
+                            <div id="profile-container">
+                             <image id="profileImage" src="./images2/goals.png" />
+                                </div>
+                            <input id="imageUpload" type="file" 
+                         name="profile_photo" placeholder="Photo" required="" capture>
+                
+                            <ul>
+                                <li>Name</li>
+                                <li>Email</li>
+                                <li>Level</li>
+                                <li>Points</li>
+                              </ul>
+                              <a href=""> Change password</a>
+                              <a href=""> Change password</a>
+                              <a href=""> Change password</a>
+                        </div>
+                        <div class="profilegoals">
+                            <div class="profilegoal">  
+                              <h3>Goal Name</h3>   
+                            <div class="progres-bar">
+                            <p> PROGRESS: </p>
+                            <div class="progres"  style="width: 90%;" >
+                                 <div class="progress-bar-proc"> 90% </div>
+                                 </div>
+                            </div>
+                         </div>
+
+                         <div class="profilegoal">  
+                            <h3>Goal Name</h3>  
+                        <div class="progres-bar">
+                        <p> PROGRESS: </p>
+                        <div class="progres"  style="width: 90%;" >
+                             <div class="progress-bar-proc"> 90% </div>
+                             </div>
+                        </div>
+                     </div>
+                     <div class="profilegoal">  
+                        <h3>Goal Name</h3>  
+                    <div class="progres-bar">
+                    <p> PROGRESS: </p>
+                    <div class="progres"  style="width: 90%;" >
+                         <div class="progress-bar-proc"> 90% </div>
+                         </div>
+                    </div>
+                 </div>
+                        </div>
+
+                         
+                    </div>
+                    <div class="scenario">
+                      <div class="vision">
+                          <h1>Life Vision in 3-5 Years</h1>
+                          <p>  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, est quasi deleniti recusandae veritatis voluptas hic libero labore aut ipsam vel. Fuga cumque, ab iure ea perspiciatis laboriosam ipsum libero voluptatum. Expedita culpa sint ducimus reprehenderit nostrum ullam sed quidem eveniet, assumenda ratione excepturi et at incidunt adipisci numquam consequatur. </p>
+                      </div>
+                      <div class="vision">
+                        <h1>Worst Scenario in 3-5 Years</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque assumenda reprehenderit sunt mollitia magnam quae odio minima corporis, corrupti quisquam quod! Adipisci laboriosam minima voluptatibus aperiam exercitationem doloribus, corrupti laudantium repudiandae quis non quibusdam debitis voluptatum natus, voluptas sed quidem minus? Impedit sequi odit minima! Perspiciatis harum consectetur ipsum dolorum?</p>
+                      </div>
+                    </div>
+                    </div>
   
                 <!--    content  SECTION  END-->
     <!--     Footer   -->
@@ -80,6 +143,23 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="./js/jquery.fittext.js"></script>
+    <script>
+        $("#profileImage").click(function(e) {
+    $("#imageUpload").click();
+});
+
+function fasterPreview( uploader ) {
+    if ( uploader.files && uploader.files[0] ){
+          $('#profileImage').attr('src', 
+             window.URL.createObjectURL(uploader.files[0]) );
+    }
+}
+
+$("#imageUpload").change(function(){
+    fasterPreview( this );
+});
+    </script>
 </body>
 </html>
